@@ -1,0 +1,53 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACT II - Word Scramble</title>
+        <link href="site-style.css" rel="stylesheet">
+        <link href="game-style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="overlay start-screen" id="start-screen">
+            <span class="start-title">Ready to start the show?</span>
+            <span class="start-header">Click the ticket to start the game!</span>
+            <div class="full-ticket" id="start-button">
+                <button class="left-ticket-btn"><img src="ASSETS/START/left-ticket.PNG" class="left-ticket-img" id="left-ticket-img"></button>
+                <button class="right-ticket-btn"><img src="ASSETS/START/right-ticket.PNG" class="right-ticket-img" id="right-ticket-img"></button>
+            </div>
+        </div>
+
+        <div class="header" id="header">
+            <button class="left-header-btn header-btn" id="back-header-btn"><img id="back-btn-img" class="header-btn-img" src="ASSETS/HEADER/back.png"></button>
+            <button class="right-header-btn header-btn" id="mute-header-btn"><img id="mute-btn-img" class="header-btn-img" src="ASSETS/HEADER/unmute.png"></button>
+        </div>
+
+        <div class="game-board" id="game-board">
+            <span class="instructions"> Solve for the secret code below by unscrambling the letters that solves the question below. </span>
+            <div class="prompt-box">
+                <div class="prompt-container">
+                    <div class="prompt-text" id="prompt-text">LOREM IPSUM</div>
+                    <div class="prompt-question" id="prompt-question">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Nam id elit eget dui placerat pharetra. Quisque vitae justo non mauris ullamcorper auctor et nec leo. 
+                        Mauris placerat urna luctus diam iaculis ornare. Vestibulum eu nisi at nisl accumsan viverra sit amet blandit nunc. 
+                        Ut at iaculis erat.
+                    </div>
+                </div>
+            </div>
+            <input class="input-box" id="input-box" placeholder="TYPE YOUR ANSWER HERE">
+            <button class="submit-btn" id="submit-btn" onclick="submitAnswer()"><img class="submit-btn-img" src="ASSETS/submit-btn.png"></button>
+        </div>
+
+        <div class="overlay end-screen" id="end-screen">
+            <img src="ASSETS/token.png" class="token-img">
+            <div class="end-message">Congratulations! You have earned the</div>
+            <div class="end-title"> CAMPUS WANDERER BADGE!</div>
+            <div class="end-message"> The secret code for the next Act is ASSISTANCE! The show has ended and you can click the button below to head back to the tent!</div>
+            <button class="menu-btn" id="menu-btn"><img class="menu-btn-img" src="ASSETS/menu-btn.png"></button>
+        </div>
+    </body>
+
+</html>
