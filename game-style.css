@@ -201,7 +201,7 @@
     }
 
     .input-box{
-        width: 400px;
+        width: 330px;
         border: solid 6px #c1791b;
         border-radius: 8px;
         padding: 5px;
@@ -211,5 +211,30 @@
 
     ::placeholder{
         font-size: 14px;
+    }
+
+    .prompt-container{
+        width: 330px;
+        height: 190px;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .prompt-box{
+        width: 330px ;
+        height: 220px;
+        background-size: 330px;
+        background-image: url(ASSETS/mobile-prompt.png);
+    }
+
+    .prompt-text{
+        font-size: 24px;
+        margin: -5px 0px 0px 0px;
+        width: 280px;
+    }
+
+    .prompt-question{
+        font-size: 12px;
+        margin: 5px 0px 0px 0px;
+        width: 280px;
     }
 }
